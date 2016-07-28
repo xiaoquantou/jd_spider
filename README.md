@@ -8,7 +8,7 @@
 
 #2、抓取到的数据属性如下所示
 商品数据
-![image](http://github.com/xiaoquantou/jd_spider/master/jd_spider/good.png)
+![image](http://github.com/xiaoquantou/jd_spider/jd_spider/good.png)
 
 #3、使用说明：
 ##(1)抓取商品信息和抓取评论分别写在了两个不同的爬虫里
@@ -31,6 +31,6 @@
 
 <li>http://blog.csdn.net/xiaoquantouer/article/details/51841016</li>
 
-
+<br>
 ##有问题欢迎留言
 
