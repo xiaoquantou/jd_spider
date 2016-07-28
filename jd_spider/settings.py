@@ -33,7 +33,7 @@ USER_AGENTS = [
     "Opera/9.80 (Macintosh; Intel Mac OS X 10.6.8; U; fr) Presto/2.9.168 Version/11.52",
 ]
 
-# http://www.xicidaili.com/
+# 这里使用的代理IP，因为IP的存活期的限制，请定期更新下面的IP，可从http://www.xicidaili.com/ 中找免费的代理IP
 PROXIES = [
     {'ip_port': '202.75.210.45:7777', 'user_pass': ''},
     {'ip_port': '222.211.65.72:8080', 'user_pass': ''},
@@ -54,6 +54,8 @@ PROXIES = [
 
 COOKIES_ENABLED = False
 
+
+# 如果不想使用代理IP，可以将下面这段DOWNLOADER_MIDDLEWARES代码注释掉
 DOWNLOADER_MIDDLEWARES = {
     'jd_spider.middlewares.RandomUserAgent': 1,
     'scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware': 110,
@@ -64,6 +66,7 @@ DOWNLOAD_DELAY = 7
 
 LOG_LEVEL = 'INFO'
 
+# 数据库的配置，请将下面的换成你自己的数据库配置
 DB_HOST = 'localhost'
 DB_PORT = 3306
 DB_USER = 'root'
@@ -71,6 +74,6 @@ DB_PASSWD = 'U7i8o9p0'
 DB_DB = 'test'
 
 ITEM_PIPELINES = {
-    # 'jd_spider.pipelines.MySQLPipeline': 300,
-    'jd_spider.pipelines.CommentPipeline': 300,
+    # 'jd_spider.pipelines.MySQLPipeline': 300,  # 抓取商品信息时，使用该通道
+    'jd_spider.pipelines.CommentPipeline': 300,  # 抓取评论信息时，使用该通道
 }

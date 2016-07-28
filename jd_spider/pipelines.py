@@ -141,62 +141,12 @@ class CommentPipeline(object):
         days = item['days']
         tags = item['commentTags']
 
-        # user_name = user_name.encode('utf-8')
-        # userProvince = userProvince.encode('utf-8')
-        # content = content.encode('utf-8')
-        # good_ID = good_ID.encode('utf-8')
-        # good_name = good_name.encode('utf-8')
-        # date = date.encode('utf-8')
-        # title = title.encode('utf-8')
-        # userRegisterTime = userRegisterTime.encode('utf-8')
-        # productColor = productColor.encode('utf-8')
-        # productSize = productSize.encode('utf-8')
-        # userLevelName = userLevelName.encode('utf-8')
-        # tags = tags.encode('utf-8')
-
         sql = "INSERT INTO comment1 VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s'," \
               "'%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')" % \
               (user_name, user_ID, userProvince, content, good_ID, good_name, date, replyCount, score,
                status, title, userRegisterTime, productColor, productSize, userLevelName,
                isMobile, days, tags)
 
-        # print "user_name"
-        # print user_name
-        # print "user_ID"
-        # print user_ID
-        # print "userProvince"
-        # print userProvince
-        # print "content"
-        # print content
-        # print "good_ID"
-        # print good_ID
-        # print "good_name"
-        # print good_name
-        # print "date"
-        # print date
-        # print "replyCount"
-        # print replyCount
-        # print "score"
-        # print score
-        # print "status"
-        # print status
-        # print "title"
-        # print title
-        # print "userRegisterTime"
-        # print userRegisterTime
-        # print "productColor"
-        # print productColor
-        # print "productSize"
-        # print productSize
-        # print "userLevelName"
-        # print userLevelName
-        # print "isMobile"
-        # print isMobile
-        # print "days"
-        # print days
-        # print "tags"
-        # print tags
-        # print sql
         tx.execute(sql)
         print "yes"
 
