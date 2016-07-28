@@ -8,7 +8,10 @@
 
 #2、抓取到的数据属性如下所示
 商品数据
-![image](http://github.com/xiaoquantou/jd_spider/jd_spider/good.png)
+![image](http://img.blog.csdn.net/20160706175045922)
+
+评论数据
+![image](http://img.blog.csdn.net/20160706174754513)
 
 #3、使用说明：
 ##(1)抓取商品信息和抓取评论分别写在了两个不同的爬虫里
@@ -25,7 +28,7 @@
 <li>setting.py中可以配置数据库的主机，端口，用户名，密码和数据库名信息</li>
 <li>pipeline.py中在sql语句中配置你要存入的表的名称。</li>
 
-
+<br>
 <p>更多爬虫的细节可以参考我的博客文章：</p>
 <li>http://blog.csdn.net/xiaoquantouer/article/details/51840332</li>
 
