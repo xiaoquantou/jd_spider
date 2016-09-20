@@ -77,7 +77,7 @@ class MySQLPipeline(object):
         score5count = score5count.encode('utf-8')
         price = price.encode('utf-8')
 
-        sql = "INSERT INTO goods VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')" % \
+        sql = "INSERT INTO jd_goods VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')" % \
               (ID, name, comment_num, shop_name, link, commentVersion, score1count, score2count, score3count,
                score4count, score5count, price)
         tx.execute(sql)
@@ -141,7 +141,7 @@ class CommentPipeline(object):
         days = item['days']
         tags = item['commentTags']
 
-        sql = "INSERT INTO comment1 VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s'," \
+        sql = "INSERT INTO jd_comment VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s'," \
               "'%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')" % \
               (user_name, user_ID, userProvince, content, good_ID, good_name, date, replyCount, score,
                status, title, userRegisterTime, productColor, productSize, userLevelName,

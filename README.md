@@ -47,6 +47,10 @@
 抓取商品信息代码在jd_home.py中，数据库在setting.py中修改ITEM_PIPELINES，使用MySQLPipeline
 抓取评论代码在jd_comment.py中，数据库在setting.py中修改ITEM_PIPELINES，使用CommentPipeline
 
+数据库表结构：
+jd_comment.sql：评论   
+jd_goods.sql：商品
+
 ##(2)setting.py文件
 默认开启了代理IP，因为IP的存活期的限制，要定期更新PROXIES中IP信息，可从网站：http://www.xicidaili.com/ 中找免费的代理IP
 
