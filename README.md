@@ -42,8 +42,6 @@
 
 <br>
 ##有问题欢迎留言
-<<<<<<< HEAD
-=======
 
 #3、使用说明：
 ##(1)抓取商品信息和抓取评论分别写在了两个不同的爬虫里
@@ -65,6 +63,5 @@ pipeline.py中在sql语句中配置你要存入的表的名称。
 http://blog.csdn.net/xiaoquantouer/article/details/51840332
 
 http://blog.csdn.net/xiaoquantouer/article/details/51841016
-=======
->>>>>>> 91b013992cd4025427f6f28b4b81b9edd1b8eb99
+
 
