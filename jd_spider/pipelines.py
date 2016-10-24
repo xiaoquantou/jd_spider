@@ -81,9 +81,6 @@ class MySQLPipeline(object):
               (ID, name, comment_num, shop_name, link, commentVersion, score1count, score2count, score3count,
                score4count, score5count, price)
         tx.execute(sql)
-        # sql = "INSERT INTO goods (ID, name, comment_num, shop_name, link)" \
-        #       "VALUES (%s, %s, %s, %s, %s)" % (ID, name, comment_num, shop_name, link)
-        # tx.execute(sql)
         print "yes"
 
     def _handle_error(self, e):

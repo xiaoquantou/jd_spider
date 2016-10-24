@@ -35,6 +35,10 @@
 <li>jd_goods.sql：商品数据</li>
 
 <br>
+<p>在使用本爬虫中，因为在抓取评论信息时需要用到goods.xls文件。因此需要先抓取商品信息，然后将商品信息的相关内容导出到goods.xls中（这里提供了一个goods.xls的格式供参考）</p>
+<p>goods.xls格式：第1列：商品ID，第2列：商品评论数；第3列：商品的commentVersion</p>
+<p>在一个工程中，抓取商品信息和抓取评论信息不能同时进行。</p>
+<br>
 <p>更多爬虫的细节可以参考我的博客文章：</p>
 <li>http://blog.csdn.net/xiaoquantouer/article/details/51840332</li>
 

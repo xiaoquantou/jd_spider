@@ -35,21 +35,13 @@ USER_AGENTS = [
 
 # 这里使用的代理IP，因为IP的存活期的限制，请定期更新下面的IP，可从http://www.xicidaili.com/ 中找免费的代理IP
 PROXIES = [
-    {'ip_port': '202.75.210.45:7777', 'user_pass': ''},
-    {'ip_port': '222.211.65.72:8080', 'user_pass': ''},
-    {'ip_port': '121.33.226.167:3128', 'user_pass': ''},
-    {'ip_port': '121.40.108.76:80', 'user_pass': ''},
-    {'ip_port': '122.96.59.102:83', 'user_pass': ''},
-    {'ip_port': '118.114.77.47:8080', 'user_pass': ''},
-    {'ip_port': '222.80.95.119:1337', 'user_pass': ''},
-    {'ip_port': '112.91.208.78:9999', 'user_pass': ''},
-    {'ip_port': '122.226.128.251:3128', 'user_pass': ''},
-    {'ip_port': '218.27.204.114:9797', 'user_pass': ''},
-    {'ip_port': '58.67.159.50:80', 'user_pass': ''},
-    {'ip_port': '110.206.127.136:9797', 'user_pass': ''},
-    {'ip_port': '220.249.185.178:9999', 'user_pass': ''},
-    {'ip_port': '122.225.106.36:80', 'user_pass': ''},
-    {'ip_port': '113.200.214.163:9999', 'user_pass': ''},
+    {'ip_port': '202.108.2.42:80', 'user_pass': ''},
+    {'ip_port': '122.96.59.104:80', 'user_pass': ''},
+    {'ip_port': '120.76.243.40:80', 'user_pass': ''},
+    {'ip_port': '139.196.108.68:80', 'user_pass': ''},
+    {'ip_port': '60.194.100.51:80', 'user_pass': ''},
+    {'ip_port': '202.171.253.72:80', 'user_pass': ''},
+    {'ip_port': '123.56.74.13:8080', 'user_pass': ''},
 ]
 
 COOKIES_ENABLED = False
@@ -62,18 +54,18 @@ DOWNLOADER_MIDDLEWARES = {
     'jd_spider.middlewares.ProxyMiddleware': 100,
 }
 
-DOWNLOAD_DELAY = 7
+DOWNLOAD_DELAY = 7  # 下载延迟
 
 LOG_LEVEL = 'INFO'
 
 # 数据库的配置，请将下面的换成你自己的数据库配置
-DB_HOST = 'localhost'
-DB_PORT = 3306
-DB_USER = 'root'
-DB_PASSWD = 'U7i8o9p0'
-DB_DB = 'test'
+DB_HOST = 'localhost'  # 主机名
+DB_PORT = 3306  # 端口号
+DB_USER = 'root'    # 用户名
+DB_PASSWD = 'xiaoquantou'  # 密码
+DB_DB = 'test'  # 数据库名
 
 ITEM_PIPELINES = {
-    # 'jd_spider.pipelines.MySQLPipeline': 300,  # 抓取商品信息时，使用该通道
-    'jd_spider.pipelines.CommentPipeline': 300,  # 抓取评论信息时，使用该通道
+    'jd_spider.pipelines.MySQLPipeline': 300,  # 抓取商品信息时，使用该通道
+    # 'jd_spider.pipelines.CommentPipeline': 300,  # 抓取评论信息时，使用该通道
 }

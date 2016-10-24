@@ -11,6 +11,8 @@ class comment_spider(Spider):
     name = "comment"
     xlrd.Book.encoding = "utf-8"
     data = xlrd.open_workbook("goods.xls")
+    # goods为要抓取评论的商品信息，现提供一个goods.xls文件供参考,第1列：商品ID；第2列：商品评论数；第3列：商品的commentVersion
+    # test.xlsx也可以使用
     table = data.sheets()[0]
     nrows = table.nrows  # 行数
     ncols = table.ncols  # 列数
@@ -33,11 +35,6 @@ class comment_spider(Spider):
 
     def parse(self, response):
         temp1 = response.body.split('productAttr')
-        # if len(temp1) < 2:
-        #     item2 = commentItem()
-        #     item2['content'] = response.url.encode('utf-8')
-        #     return item2
-        #
         str = '{"productAttr' + temp1[1][:-2]
         str = str.decode("gbk").encode("utf-8")
         js = json.loads(unicode(str, "utf-8"))
