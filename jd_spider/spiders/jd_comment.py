@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 from scrapy.spiders import Spider
-from jd_spider.items import goodsItem, commentItem
-from scrapy.selector import Selector
-import re
+from jd_spider.items import commentItem
 import json
 import xlrd
 

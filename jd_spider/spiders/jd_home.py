@@ -10,7 +10,7 @@ import json
 class jd_spider(Spider):
     name = "jd"
     start_urls = []
-    for i in range(1, 11):   # 这里请自己设置页数，目前只能抓取电子烟分类下前10页的商品
+    for i in range(1, 11):  # 这里需要自己设置页数，目前只能抓取电子烟分类下前10页的商品
         url = 'http://list.jd.com/list.html?cat=1672,2599,1440&ev=111217_635585&page=' + str(i)
         start_urls.append(url)
 

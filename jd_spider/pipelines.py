@@ -11,7 +11,6 @@ from scrapy.xlib.pydispatch import dispatcher
 from scrapy import signals
 from scrapy.utils.project import get_project_settings
 from scrapy import log
-import chardet
 
 SETTINGS = get_project_settings()
 
